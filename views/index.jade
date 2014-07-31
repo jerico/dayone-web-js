@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .row
+    - each entry in entries
+      div.col-xs-12.col.md-6
+        .panel.panel-default
+          .panel-heading= entry["Creation Date"]
+          .panel-body= entry["Entry Text"]
